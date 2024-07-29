@@ -7,7 +7,7 @@
 --
 
 local sep = package.config:sub(1, 1)
-local dirname = string.sub(debug.getinfo(1).source, 2, string.len('/init.lua') * -1)
+local dirname = string.sub(debug.getinfo(1).source, 2, string.len('/start.lua') * -1)
 
 local original_path = dirname .. sep .. 'original.lua'
 local native_path   = dirname .. sep .. 'native.lua'
